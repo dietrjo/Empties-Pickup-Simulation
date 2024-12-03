@@ -1,11 +1,10 @@
 import webbrowser
 
-from src.services.map import generate_map
+from src.services.map import create_map
 
 
 def main():
-    tour_map = generate_map()
-    tour_map.save("tour_map.html")
+    create_map().save("tour_map.html")
     webbrowser.open("tour_map.html")
 
 
