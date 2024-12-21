@@ -1,0 +1,28 @@
+{
+  "num_vehicles": 4,
+  "vehicle_capacities": [10000, 10000, 8000, 8000],
+  "warehouse_address": "Keßlerstraße 12 Jena",
+  "customers": {
+    "addresses": [
+      "Ernst-Schneller-Straße 14 Jena",
+      "Klosterweg 6B Jena",
+      "Ernst-Zielinski-Straße 13 Jena",
+      "Leutragraben 2 Jena",
+      "Spitzweidenweg 35 Jena",
+      "Hegelstraße 1 Jena",
+      "Sachseneckweg 20 Jena",
+      "Beethovenstraße 15 Jena"
+    ],
+    "demands": [
+      0,
+      1500,
+      1000,
+      3000,
+      2300,
+      5000,
+      6000,
+      700,
+      3400
+    ]
+  }
+}
