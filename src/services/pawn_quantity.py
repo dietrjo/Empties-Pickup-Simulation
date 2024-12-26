@@ -23,4 +23,12 @@ def get_pawn_quanity(expectation_value=16, standard_deviation=10) -> int:
 
 
 if __name__ == '__main__':
-    print(get_pawn_quanity())
+    sum = 0
+    frequency = 30
+    print("\n\nTesting", frequency, "times")
+    
+    for _ in range(frequency):
+        random = get_pawn_quanity()
+        sum += random
+    
+    print("sum", sum, "avg", round(sum/frequency, 2),"\n\n")
