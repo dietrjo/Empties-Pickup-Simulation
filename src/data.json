@@ -1,6 +1,6 @@
 {
   "num_vehicles": 4,
-  "vehicle_capacities": [10000, 10000, 8000, 8000],
+  "vehicle_capacities": [100, 100, 80, 80],
   "warehouse_address": "Keßlerstraße 12 Jena",
   "customers": {
     "addresses": [
@@ -15,14 +15,14 @@
     ],
     "demands": [
       0,
-      1500,
-      1000,
-      3000,
-      2300,
-      5000,
-      6000,
-      700,
-      3400
+      15,
+      7,
+      3,
+      2.3,
+      5,
+      6.7,
+      0.7,
+      3.4
     ]
   }
 }
