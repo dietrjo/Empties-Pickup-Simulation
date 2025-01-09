@@ -12,6 +12,8 @@ def main():
     tours, coords = get_tours(warehouse_location, customer_locations)
     routes_lat_lons = get_routes_lat_lons(tours, coords)
 
+
+
     create_map(warehouse_location, customer_locations, routes_lat_lons).save("tour_map.html")
     webbrowser.open("tour_map.html")
 
