@@ -1,12 +1,10 @@
 import osmnx as ox
 
 from src.services.location import Location
-from src.utils.data_loader import load_json
 from src.utils.distance_matrix import create_distance_matrix
 from src.utils.or_tools_cvrp import solve_cvrp
 
 G = ox.graph_from_place("Jena, Germany", network_type="drive_service", simplify=False)
-data = load_json('data.json')
 
 
 def get_tours(warehouse_location, customer_locations) -> (list[list[int]], list[Location]):

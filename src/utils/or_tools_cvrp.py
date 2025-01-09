@@ -32,7 +32,7 @@ def print_solution(manager, routing, solution, dist_matrix):
         total_distance += route_distance
         total_load += route_load
     print(f"Total distance of all routes: {total_distance}m")
-    print(f"Total load of all routes: {total_load}")
+    print(f"Total load of all routes: {total_load}\n")
 
 
 def solve_cvrp(dist_matrix):
