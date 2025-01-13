@@ -32,7 +32,7 @@ def print_solution(manager, routing, solution, dist_matrix):
         total_distance += route_distance
         total_load += route_load
     print(f"Total distance of all routes: {total_distance}m")
-    print(f"Total load of all routes: {total_load}")
+    print(f"Total load of all routes: {total_load}\n")
 
 
 def solve_cvrp(dist_matrix):
@@ -62,7 +62,8 @@ def solve_cvrp(dist_matrix):
     def demand_callback(from_index):
         """Returns the demand of the node."""
         # Convert from routing variable Index to demands NodeIndex.
-        return data["customers"]["demands"][from_index]
+        from_node = manager.IndexToNode(from_index)
+        return data["customers"]["demands"][from_node]
 
     demand_callback_index = routing.RegisterUnaryTransitCallback(demand_callback)
     routing.AddDimensionWithVehicleCapacity(
