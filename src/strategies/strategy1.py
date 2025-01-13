@@ -24,7 +24,7 @@ def simulate_strategy_1(n: int, tours: list[list[int]]):
 
             for j in range(1, len(tour) - 1):
                 demand = demands[tour[j]]
-                pickup_demand = get_normal_distribution_quantity(5000)
+                pickup_demand = get_normal_distribution_quantity()
 
                 pickup_demands += pickup_demand
                 if pickup_demand >= demand:

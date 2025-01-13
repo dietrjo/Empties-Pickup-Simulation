@@ -1,7 +1,7 @@
 import folium
 
 
-def create_map(warehouse_location, customer_locations, routes_lat_lons):
+def create_map(warehouse_location, customer_locations, route_lat_lons):
 
     tour_map = folium.Map(location=warehouse_location.coords, zoom_start=14, tiles='OpenStreetMap')
 
@@ -24,14 +24,13 @@ def create_map(warehouse_location, customer_locations, routes_lat_lons):
             draggable=False
         ).add_to(tour_map)
 
-    # Create Tours
-    tour_colors = ["red", "blue", "yellow", "green"]
-    for i in range(len(routes_lat_lons)):
-        for route_coords in routes_lat_lons[i]:
-            folium.PolyLine(
-                route_coords,
-                color=tour_colors[i],
-                weight=3
-            ).add_to(tour_map)
+    # Create Tour
+
+    for route_coords in route_lat_lons:
+        folium.PolyLine(
+            route_coords,
+            color="blue",
+            weight=3
+        ).add_to(tour_map)
 
     return tour_map
