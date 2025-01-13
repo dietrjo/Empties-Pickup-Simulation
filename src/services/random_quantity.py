@@ -1,6 +1,6 @@
 import numpy as np
 
-def get_normal_distribution_quantity(expectation_value=16, standard_deviation=10) -> int:
+def get_normal_distribution_quantity(expectation_value=16, standard_deviation=10, maximum=100) -> int:
     """
     Gibt einen Zufallswert x zurück, basierend auf einer abgeschnittenen Normalverteilung,
     die nur Werte x >= 0 berücksichtigt
@@ -16,9 +16,8 @@ def get_normal_distribution_quantity(expectation_value=16, standard_deviation=10
         # Generiere einen Wert basierend auf der Normalverteilung
         value = np.random.normal(expectation_value, standard_deviation)
         
-        # Wenn der Wert >= 0 ist, gib ihn zurück
-        if value >= 0:
-            return round(value)
+        if value <= maximum:
+            return max(0, round(value))
 
 
 if __name__ == '__main__':
