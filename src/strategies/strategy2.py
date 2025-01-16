@@ -12,6 +12,9 @@ def simulate_strategy_2(n: int, tours: list[list[int]]):
 
     sum_fulfillment_level = 0
 
+    full_pickup_num = 0
+    pickup_num = 0
+
     for _ in range(n):
         pickup_demands = 0
         pickup_quantity = 0
@@ -37,10 +40,12 @@ def simulate_strategy_2(n: int, tours: list[list[int]]):
 
                 pickup_demands += pickup_demand
                 vehicle_space += demand
+                pickup_num += 1
 
                 if vehicle_space >= pickup_demand:
                     pickup_quantity += pickup_demand
                     vehicle_space -= pickup_demand
+                    full_pickup_num += 1
                 else:
                     pickup_quantity += vehicle_space
                     vehicle_space = 0
@@ -50,3 +55,6 @@ def simulate_strategy_2(n: int, tours: list[list[int]]):
 
     average_fulfillment_level = sum_fulfillment_level / n
     print(f'Erfüllungsgrad von Strategie 2: {round(average_fulfillment_level * 100, 2)}%')
+
+    full_pickup_quote = full_pickup_num / pickup_num
+    print(f'100% Abholquote von Strategie 2: {round(full_pickup_quote * 100, 2)}%')

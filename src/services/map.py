@@ -25,7 +25,6 @@ def create_map(warehouse_location, customer_locations, route_lat_lons):
         ).add_to(tour_map)
 
     # Create Tour
-
     for route_coords in route_lat_lons:
         folium.PolyLine(
             route_coords,
