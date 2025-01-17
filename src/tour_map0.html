@@ -1,0 +1,3582 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1069a039418029dd5bafe00f6346408d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1069a039418029dd5bafe00f6346408d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1069a039418029dd5bafe00f6346408d = L.map(
+                "map_1069a039418029dd5bafe00f6346408d",
+                {
+                    center: [50.924205555556, 11.586361111111],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bb5f09b16fdd060e8cb2e8fd234b1e5d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_bb5f09b16fdd060e8cb2e8fd234b1e5d.addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var marker_ade554136b44ffa0992acd4c6b03fcee = L.marker(
+                [50.8995721, 11.594290344916297],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_fa3423a7e942d3f1c5eb0becf231ab2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ade554136b44ffa0992acd4c6b03fcee.setIcon(icon_fa3423a7e942d3f1c5eb0becf231ab2c);
+        
+    
+        var popup_3cb0cd70a39e1a8c01cbcf490bdf31c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c9284449f7a51f30455f12e9f33cd91 = $(`<div id="html_0c9284449f7a51f30455f12e9f33cd91" style="width: 100.0%; height: 100.0%;">Keßlerstraße 12 Jena</div>`)[0];
+                popup_3cb0cd70a39e1a8c01cbcf490bdf31c8.setContent(html_0c9284449f7a51f30455f12e9f33cd91);
+            
+        
+
+        marker_ade554136b44ffa0992acd4c6b03fcee.bindPopup(popup_3cb0cd70a39e1a8c01cbcf490bdf31c8)
+        ;
+
+        
+    
+    
+            marker_ade554136b44ffa0992acd4c6b03fcee.bindTooltip(
+                `<div>
+                     Keßlerstraße 12 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e54106f4ad99173a3f5837646c207c28 = L.marker(
+                [50.8821233, 11.6217198],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_75b2ae42a0b6f37f8d6c62d171ff1a9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e54106f4ad99173a3f5837646c207c28.setIcon(icon_75b2ae42a0b6f37f8d6c62d171ff1a9b);
+        
+    
+        var popup_0ce30e2d16e448412a73d31aa7dff0c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6936626a703e237a475aea35b1be730 = $(`<div id="html_d6936626a703e237a475aea35b1be730" style="width: 100.0%; height: 100.0%;">Ernst-Schneller-Straße 14 Jena</div>`)[0];
+                popup_0ce30e2d16e448412a73d31aa7dff0c5.setContent(html_d6936626a703e237a475aea35b1be730);
+            
+        
+
+        marker_e54106f4ad99173a3f5837646c207c28.bindPopup(popup_0ce30e2d16e448412a73d31aa7dff0c5)
+        ;
+
+        
+    
+    
+            marker_e54106f4ad99173a3f5837646c207c28.bindTooltip(
+                `<div>
+                     Ernst-Schneller-Straße 14 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_60fadf4a5220e68ee13256509d57775c = L.marker(
+                [50.87998091522274, 11.591460488312629],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_7f5e42d832e808bcda69091ca83f6c31 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_60fadf4a5220e68ee13256509d57775c.setIcon(icon_7f5e42d832e808bcda69091ca83f6c31);
+        
+    
+        var popup_569f9bd88a78d1c0ac2536d704c8d5ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8244cc1070553a76e2c08465dfc65430 = $(`<div id="html_8244cc1070553a76e2c08465dfc65430" style="width: 100.0%; height: 100.0%;">Klosterweg 6B Jena</div>`)[0];
+                popup_569f9bd88a78d1c0ac2536d704c8d5ab.setContent(html_8244cc1070553a76e2c08465dfc65430);
+            
+        
+
+        marker_60fadf4a5220e68ee13256509d57775c.bindPopup(popup_569f9bd88a78d1c0ac2536d704c8d5ab)
+        ;
+
+        
+    
+    
+            marker_60fadf4a5220e68ee13256509d57775c.bindTooltip(
+                `<div>
+                     Klosterweg 6B Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ea679a61146db3e390f7e5569a43ab78 = L.marker(
+                [50.8959727, 11.5784069],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_e3d73b1e1338bc1f8cd3aab61726390d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ea679a61146db3e390f7e5569a43ab78.setIcon(icon_e3d73b1e1338bc1f8cd3aab61726390d);
+        
+    
+        var popup_26592186160f525dc802ccb3ccdc3159 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc4cf8cb21afeb7a69f660b8cb7f4747 = $(`<div id="html_bc4cf8cb21afeb7a69f660b8cb7f4747" style="width: 100.0%; height: 100.0%;">Ernst-Zielinski-Straße 13 Jena</div>`)[0];
+                popup_26592186160f525dc802ccb3ccdc3159.setContent(html_bc4cf8cb21afeb7a69f660b8cb7f4747);
+            
+        
+
+        marker_ea679a61146db3e390f7e5569a43ab78.bindPopup(popup_26592186160f525dc802ccb3ccdc3159)
+        ;
+
+        
+    
+    
+            marker_ea679a61146db3e390f7e5569a43ab78.bindTooltip(
+                `<div>
+                     Ernst-Zielinski-Straße 13 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7615355e9bcdb2d8416988342b657b98 = L.marker(
+                [50.928729149999995, 11.583316029751227],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_8cc513b7a9964135fdaae733c84e5216 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7615355e9bcdb2d8416988342b657b98.setIcon(icon_8cc513b7a9964135fdaae733c84e5216);
+        
+    
+        var popup_05d03df2e497e06d811fdf3636188f93 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20256a421227179d61baf1d9be5d1708 = $(`<div id="html_20256a421227179d61baf1d9be5d1708" style="width: 100.0%; height: 100.0%;">Leutragraben 2 Jena</div>`)[0];
+                popup_05d03df2e497e06d811fdf3636188f93.setContent(html_20256a421227179d61baf1d9be5d1708);
+            
+        
+
+        marker_7615355e9bcdb2d8416988342b657b98.bindPopup(popup_05d03df2e497e06d811fdf3636188f93)
+        ;
+
+        
+    
+    
+            marker_7615355e9bcdb2d8416988342b657b98.bindTooltip(
+                `<div>
+                     Leutragraben 2 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d2d050fe24ff37c01f12b53121ddca44 = L.marker(
+                [50.936686, 11.5917314],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_9a0629f504d34d0aaac6427db16644d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d2d050fe24ff37c01f12b53121ddca44.setIcon(icon_9a0629f504d34d0aaac6427db16644d0);
+        
+    
+        var popup_46b6d82efa60b30994e543b14af8a15c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6b4d9b6360da151692266f8c42afe6f = $(`<div id="html_c6b4d9b6360da151692266f8c42afe6f" style="width: 100.0%; height: 100.0%;">Spitzweidenweg 35 Jena</div>`)[0];
+                popup_46b6d82efa60b30994e543b14af8a15c.setContent(html_c6b4d9b6360da151692266f8c42afe6f);
+            
+        
+
+        marker_d2d050fe24ff37c01f12b53121ddca44.bindPopup(popup_46b6d82efa60b30994e543b14af8a15c)
+        ;
+
+        
+    
+    
+            marker_d2d050fe24ff37c01f12b53121ddca44.bindTooltip(
+                `<div>
+                     Spitzweidenweg 35 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5b2063cb382451ddc0af709e26b814fc = L.marker(
+                [50.95811615, 11.620445980499998],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_b37a6982c6293b1a701c7501d5780292 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5b2063cb382451ddc0af709e26b814fc.setIcon(icon_b37a6982c6293b1a701c7501d5780292);
+        
+    
+        var popup_46cde715eab8172659704d657f40e65f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b63b9c11ae38062747b41c59d66133e = $(`<div id="html_3b63b9c11ae38062747b41c59d66133e" style="width: 100.0%; height: 100.0%;">Hegelstraße 1 Jena</div>`)[0];
+                popup_46cde715eab8172659704d657f40e65f.setContent(html_3b63b9c11ae38062747b41c59d66133e);
+            
+        
+
+        marker_5b2063cb382451ddc0af709e26b814fc.bindPopup(popup_46cde715eab8172659704d657f40e65f)
+        ;
+
+        
+    
+    
+            marker_5b2063cb382451ddc0af709e26b814fc.bindTooltip(
+                `<div>
+                     Hegelstraße 1 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2cdc58c8399082fe60e8ea6e4e08efe0 = L.marker(
+                [50.951840879370465, 11.597482255763493],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_36cc00c84c7902b683e53f19750875ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2cdc58c8399082fe60e8ea6e4e08efe0.setIcon(icon_36cc00c84c7902b683e53f19750875ba);
+        
+    
+        var popup_3293b512a7110936b6b3d3028bcb7428 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39dc80cd0eda30555f767c2c4c2a1c05 = $(`<div id="html_39dc80cd0eda30555f767c2c4c2a1c05" style="width: 100.0%; height: 100.0%;">Sachseneckweg 20 Jena</div>`)[0];
+                popup_3293b512a7110936b6b3d3028bcb7428.setContent(html_39dc80cd0eda30555f767c2c4c2a1c05);
+            
+        
+
+        marker_2cdc58c8399082fe60e8ea6e4e08efe0.bindPopup(popup_3293b512a7110936b6b3d3028bcb7428)
+        ;
+
+        
+    
+    
+            marker_2cdc58c8399082fe60e8ea6e4e08efe0.bindTooltip(
+                `<div>
+                     Sachseneckweg 20 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0b5d09c9273034467d9c54c9e06e3353 = L.marker(
+                [50.9349953, 11.572259699999998],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_1d9bd8d75be538c6d9fea333246005b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0b5d09c9273034467d9c54c9e06e3353.setIcon(icon_1d9bd8d75be538c6d9fea333246005b9);
+        
+    
+        var popup_74a00ad26b95008df2d21c1d2127baff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb353a47c44748bdf94b95b70e32bc08 = $(`<div id="html_fb353a47c44748bdf94b95b70e32bc08" style="width: 100.0%; height: 100.0%;">Beethovenstraße 15 Jena</div>`)[0];
+                popup_74a00ad26b95008df2d21c1d2127baff.setContent(html_fb353a47c44748bdf94b95b70e32bc08);
+            
+        
+
+        marker_0b5d09c9273034467d9c54c9e06e3353.bindPopup(popup_74a00ad26b95008df2d21c1d2127baff)
+        ;
+
+        
+    
+    
+            marker_0b5d09c9273034467d9c54c9e06e3353.bindTooltip(
+                `<div>
+                     Beethovenstraße 15 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2135dfb659f0eceadd9959a0eaedf2c4 = L.marker(
+                [50.8821693, 11.630675],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_5e6d63e380268974ddec32bd1815b7da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2135dfb659f0eceadd9959a0eaedf2c4.setIcon(icon_5e6d63e380268974ddec32bd1815b7da);
+        
+    
+        var popup_886ad3147e1f40fa943d652c36b46d0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5522d680d9e57a947ea5fa003884eab8 = $(`<div id="html_5522d680d9e57a947ea5fa003884eab8" style="width: 100.0%; height: 100.0%;">Judith-Auer-Straße 13 Jena</div>`)[0];
+                popup_886ad3147e1f40fa943d652c36b46d0a.setContent(html_5522d680d9e57a947ea5fa003884eab8);
+            
+        
+
+        marker_2135dfb659f0eceadd9959a0eaedf2c4.bindPopup(popup_886ad3147e1f40fa943d652c36b46d0a)
+        ;
+
+        
+    
+    
+            marker_2135dfb659f0eceadd9959a0eaedf2c4.bindTooltip(
+                `<div>
+                     Judith-Auer-Straße 13 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c91f9d3f4e26b08ee5db06a83b2d743d = L.marker(
+                [50.8807408, 11.6365754],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_75fb7dcc971a7c16db543177b1a2bd11 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c91f9d3f4e26b08ee5db06a83b2d743d.setIcon(icon_75fb7dcc971a7c16db543177b1a2bd11);
+        
+    
+        var popup_1fcc767feb916a88a35f205cddd9240a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2969f3d9a399299b288de222a35dda90 = $(`<div id="html_2969f3d9a399299b288de222a35dda90" style="width: 100.0%; height: 100.0%;">Carolinenstraße 48 Jena</div>`)[0];
+                popup_1fcc767feb916a88a35f205cddd9240a.setContent(html_2969f3d9a399299b288de222a35dda90);
+            
+        
+
+        marker_c91f9d3f4e26b08ee5db06a83b2d743d.bindPopup(popup_1fcc767feb916a88a35f205cddd9240a)
+        ;
+
+        
+    
+    
+            marker_c91f9d3f4e26b08ee5db06a83b2d743d.bindTooltip(
+                `<div>
+                     Carolinenstraße 48 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e4ed0965e1e503524972531259006b28 = L.marker(
+                [50.8815601, 11.6390564],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_1ab5e89f0baeab73bc0c9823e52fb079 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e4ed0965e1e503524972531259006b28.setIcon(icon_1ab5e89f0baeab73bc0c9823e52fb079);
+        
+    
+        var popup_a9c535738f7cea2d8f3eb856455cd4c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90032a7f44ed135a90e520608816edc6 = $(`<div id="html_90032a7f44ed135a90e520608816edc6" style="width: 100.0%; height: 100.0%;">Musäusring 32 Jena</div>`)[0];
+                popup_a9c535738f7cea2d8f3eb856455cd4c6.setContent(html_90032a7f44ed135a90e520608816edc6);
+            
+        
+
+        marker_e4ed0965e1e503524972531259006b28.bindPopup(popup_a9c535738f7cea2d8f3eb856455cd4c6)
+        ;
+
+        
+    
+    
+            marker_e4ed0965e1e503524972531259006b28.bindTooltip(
+                `<div>
+                     Musäusring 32 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_69758e01756ecf50610cff7fbaee5c75 = L.marker(
+                [50.8799886, 11.6289845],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_b1ad613bd2b602de36988d471b1ac668 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_69758e01756ecf50610cff7fbaee5c75.setIcon(icon_b1ad613bd2b602de36988d471b1ac668);
+        
+    
+        var popup_6a284c84129f561833a9f6ed71128197 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_855d4fcf70aec7abf37b64ab4200e10c = $(`<div id="html_855d4fcf70aec7abf37b64ab4200e10c" style="width: 100.0%; height: 100.0%;">Rudolf-Breitscheid-Straße 51 Jena</div>`)[0];
+                popup_6a284c84129f561833a9f6ed71128197.setContent(html_855d4fcf70aec7abf37b64ab4200e10c);
+            
+        
+
+        marker_69758e01756ecf50610cff7fbaee5c75.bindPopup(popup_6a284c84129f561833a9f6ed71128197)
+        ;
+
+        
+    
+    
+            marker_69758e01756ecf50610cff7fbaee5c75.bindTooltip(
+                `<div>
+                     Rudolf-Breitscheid-Straße 51 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bcc678181b41fbd759676f8f289cab7e = L.marker(
+                [50.8824413, 11.61795],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_42f18d8fe251c292c109585a1118bd02 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bcc678181b41fbd759676f8f289cab7e.setIcon(icon_42f18d8fe251c292c109585a1118bd02);
+        
+    
+        var popup_99a37bc5d76f704e8878248e18e36393 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fdb19abfdfdd5403d2a2cd4d976877d4 = $(`<div id="html_fdb19abfdfdd5403d2a2cd4d976877d4" style="width: 100.0%; height: 100.0%;">Salvador-Allende-Platz 17 Jena</div>`)[0];
+                popup_99a37bc5d76f704e8878248e18e36393.setContent(html_fdb19abfdfdd5403d2a2cd4d976877d4);
+            
+        
+
+        marker_bcc678181b41fbd759676f8f289cab7e.bindPopup(popup_99a37bc5d76f704e8878248e18e36393)
+        ;
+
+        
+    
+    
+            marker_bcc678181b41fbd759676f8f289cab7e.bindTooltip(
+                `<div>
+                     Salvador-Allende-Platz 17 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_22e21c7840320e8d4feb32fbade051cc = L.marker(
+                [50.88695065, 11.613992082475193],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_b3b3bf707dec7cd655baa60ac23c3093 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_22e21c7840320e8d4feb32fbade051cc.setIcon(icon_b3b3bf707dec7cd655baa60ac23c3093);
+        
+    
+        var popup_46b5984e4b7e60b33c6c350d542f651d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1431a5ed265b831668e4924402d6dfe0 = $(`<div id="html_1431a5ed265b831668e4924402d6dfe0" style="width: 100.0%; height: 100.0%;">Platanenstraße 6 Jena</div>`)[0];
+                popup_46b5984e4b7e60b33c6c350d542f651d.setContent(html_1431a5ed265b831668e4924402d6dfe0);
+            
+        
+
+        marker_22e21c7840320e8d4feb32fbade051cc.bindPopup(popup_46b5984e4b7e60b33c6c350d542f651d)
+        ;
+
+        
+    
+    
+            marker_22e21c7840320e8d4feb32fbade051cc.bindTooltip(
+                `<div>
+                     Platanenstraße 6 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b6f140c30668f55abc96d400ce82e679 = L.marker(
+                [50.8826836, 11.6091467],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_32493c5bc3260077e9df3f5b4466c8c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b6f140c30668f55abc96d400ce82e679.setIcon(icon_32493c5bc3260077e9df3f5b4466c8c4);
+        
+    
+        var popup_f8892e0f2c34e44e09c38910757dc232 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_537a51946c4aa51b944968d5d6a20aa0 = $(`<div id="html_537a51946c4aa51b944968d5d6a20aa0" style="width: 100.0%; height: 100.0%;">Werner-Seelenbinder-Straße 15 Jena</div>`)[0];
+                popup_f8892e0f2c34e44e09c38910757dc232.setContent(html_537a51946c4aa51b944968d5d6a20aa0);
+            
+        
+
+        marker_b6f140c30668f55abc96d400ce82e679.bindPopup(popup_f8892e0f2c34e44e09c38910757dc232)
+        ;
+
+        
+    
+    
+            marker_b6f140c30668f55abc96d400ce82e679.bindTooltip(
+                `<div>
+                     Werner-Seelenbinder-Straße 15 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8225ebb9db1ebf5351a1c14848a4412b = L.marker(
+                [50.8833764, 11.6118708],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_fe4c50218c4c41250a2456497d65daf2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8225ebb9db1ebf5351a1c14848a4412b.setIcon(icon_fe4c50218c4c41250a2456497d65daf2);
+        
+    
+        var popup_45a939dcfcac108ce4c4dcf272128a1e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03313a96597b354f2c7d5d0fdf754c83 = $(`<div id="html_03313a96597b354f2c7d5d0fdf754c83" style="width: 100.0%; height: 100.0%;">Fritz-Ritter-Straße 29 Jena</div>`)[0];
+                popup_45a939dcfcac108ce4c4dcf272128a1e.setContent(html_03313a96597b354f2c7d5d0fdf754c83);
+            
+        
+
+        marker_8225ebb9db1ebf5351a1c14848a4412b.bindPopup(popup_45a939dcfcac108ce4c4dcf272128a1e)
+        ;
+
+        
+    
+    
+            marker_8225ebb9db1ebf5351a1c14848a4412b.bindTooltip(
+                `<div>
+                     Fritz-Ritter-Straße 29 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_59ff93f1b1ae6ab4f1e1c371dea3d91e = L.marker(
+                [50.8828448, 11.615216788383837],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_c6a678ecf4a1e7bee5083331b0003a50 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_59ff93f1b1ae6ab4f1e1c371dea3d91e.setIcon(icon_c6a678ecf4a1e7bee5083331b0003a50);
+        
+    
+        var popup_698e8625b2b743630c98c3dc5e1891fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1de7bfcd363da6d1a1a972a07e4488fc = $(`<div id="html_1de7bfcd363da6d1a1a972a07e4488fc" style="width: 100.0%; height: 100.0%;">Emil-Wölk-Straße 3 Jena</div>`)[0];
+                popup_698e8625b2b743630c98c3dc5e1891fd.setContent(html_1de7bfcd363da6d1a1a972a07e4488fc);
+            
+        
+
+        marker_59ff93f1b1ae6ab4f1e1c371dea3d91e.bindPopup(popup_698e8625b2b743630c98c3dc5e1891fd)
+        ;
+
+        
+    
+    
+            marker_59ff93f1b1ae6ab4f1e1c371dea3d91e.bindTooltip(
+                `<div>
+                     Emil-Wölk-Straße 3 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a9810210cf57425cb22aaaa20b3a832e = L.marker(
+                [50.879057, 11.6018223],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_cc110be4f619c41911ff8530a4666f00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a9810210cf57425cb22aaaa20b3a832e.setIcon(icon_cc110be4f619c41911ff8530a4666f00);
+        
+    
+        var popup_53822d004a0e4bebfc95d0205eae132a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba8daec1c97d25aa23eb93effb64d9fc = $(`<div id="html_ba8daec1c97d25aa23eb93effb64d9fc" style="width: 100.0%; height: 100.0%;">Hans-Berger-Straße 10 Jena</div>`)[0];
+                popup_53822d004a0e4bebfc95d0205eae132a.setContent(html_ba8daec1c97d25aa23eb93effb64d9fc);
+            
+        
+
+        marker_a9810210cf57425cb22aaaa20b3a832e.bindPopup(popup_53822d004a0e4bebfc95d0205eae132a)
+        ;
+
+        
+    
+    
+            marker_a9810210cf57425cb22aaaa20b3a832e.bindTooltip(
+                `<div>
+                     Hans-Berger-Straße 10 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_abd31a6ace24b06b22594153237f1c20 = L.marker(
+                [50.8938955, 11.61065585],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_e0482525c6d78a89973c3123f786bfd3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_abd31a6ace24b06b22594153237f1c20.setIcon(icon_e0482525c6d78a89973c3123f786bfd3);
+        
+    
+        var popup_4c7292a8f2059c2907409439e144b06f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d5bcabbdc0c16bca7b557eda5980669 = $(`<div id="html_7d5bcabbdc0c16bca7b557eda5980669" style="width: 100.0%; height: 100.0%;">Georg-Schumann-Weg 20 Jena</div>`)[0];
+                popup_4c7292a8f2059c2907409439e144b06f.setContent(html_7d5bcabbdc0c16bca7b557eda5980669);
+            
+        
+
+        marker_abd31a6ace24b06b22594153237f1c20.bindPopup(popup_4c7292a8f2059c2907409439e144b06f)
+        ;
+
+        
+    
+    
+            marker_abd31a6ace24b06b22594153237f1c20.bindTooltip(
+                `<div>
+                     Georg-Schumann-Weg 20 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_63b6987ad1fc4e0096ab6a5023833d27 = L.marker(
+                [50.89464675, 11.611221467416225],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_d32a9e364d65488cd62f99b0a8c4dabe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_63b6987ad1fc4e0096ab6a5023833d27.setIcon(icon_d32a9e364d65488cd62f99b0a8c4dabe);
+        
+    
+        var popup_def507ae21ce74c8b99adeac65d2b0f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31a2bd4800b3e4c9140868ebc8cf6266 = $(`<div id="html_31a2bd4800b3e4c9140868ebc8cf6266" style="width: 100.0%; height: 100.0%;">Olga-Benario-Weg 7 Jena</div>`)[0];
+                popup_def507ae21ce74c8b99adeac65d2b0f3.setContent(html_31a2bd4800b3e4c9140868ebc8cf6266);
+            
+        
+
+        marker_63b6987ad1fc4e0096ab6a5023833d27.bindPopup(popup_def507ae21ce74c8b99adeac65d2b0f3)
+        ;
+
+        
+    
+    
+            marker_63b6987ad1fc4e0096ab6a5023833d27.bindTooltip(
+                `<div>
+                     Olga-Benario-Weg 7 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a9babe03e3d86160857f1349986f1572 = L.marker(
+                [50.8933248, 11.60541716914446],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_5d7307799dae365888d2b1671c000be7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a9babe03e3d86160857f1349986f1572.setIcon(icon_5d7307799dae365888d2b1671c000be7);
+        
+    
+        var popup_f2c92ce4b5691a9df982fa0c6cdb3881 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8aa7b23ddf7876007a818dcf197812ab = $(`<div id="html_8aa7b23ddf7876007a818dcf197812ab" style="width: 100.0%; height: 100.0%;">Susanne-Bohl-Straße 4 Jena</div>`)[0];
+                popup_f2c92ce4b5691a9df982fa0c6cdb3881.setContent(html_8aa7b23ddf7876007a818dcf197812ab);
+            
+        
+
+        marker_a9babe03e3d86160857f1349986f1572.bindPopup(popup_f2c92ce4b5691a9df982fa0c6cdb3881)
+        ;
+
+        
+    
+    
+            marker_a9babe03e3d86160857f1349986f1572.bindTooltip(
+                `<div>
+                     Susanne-Bohl-Straße 4 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5ab32e5adc69eea821581e7a527fd24f = L.marker(
+                [50.9041675, 11.598372121017965],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_c3f3aa89c9cb0db132ced7926049c087 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5ab32e5adc69eea821581e7a527fd24f.setIcon(icon_c3f3aa89c9cb0db132ced7926049c087);
+        
+    
+        var popup_d22c95f104c787646bb8542376b590ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a2491f8c5e1a416124b92c720151566 = $(`<div id="html_6a2491f8c5e1a416124b92c720151566" style="width: 100.0%; height: 100.0%;">Hinterweg 9 Jena</div>`)[0];
+                popup_d22c95f104c787646bb8542376b590ab.setContent(html_6a2491f8c5e1a416124b92c720151566);
+            
+        
+
+        marker_5ab32e5adc69eea821581e7a527fd24f.bindPopup(popup_d22c95f104c787646bb8542376b590ab)
+        ;
+
+        
+    
+    
+            marker_5ab32e5adc69eea821581e7a527fd24f.bindTooltip(
+                `<div>
+                     Hinterweg 9 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1d2d5054c67ad39ccdfaba30358df30d = L.marker(
+                [50.87733605, 11.589408276450117],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_77effcde67530a4dbcb7256bcc6076ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1d2d5054c67ad39ccdfaba30358df30d.setIcon(icon_77effcde67530a4dbcb7256bcc6076ac);
+        
+    
+        var popup_29a87b28366cd9b4b855ad1ccdfe2c9d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1f47b1bb6a75119e71d9f1deb5ad581 = $(`<div id="html_a1f47b1bb6a75119e71d9f1deb5ad581" style="width: 100.0%; height: 100.0%;">Am Jagdberg 11 Jena</div>`)[0];
+                popup_29a87b28366cd9b4b855ad1ccdfe2c9d.setContent(html_a1f47b1bb6a75119e71d9f1deb5ad581);
+            
+        
+
+        marker_1d2d5054c67ad39ccdfaba30358df30d.bindPopup(popup_29a87b28366cd9b4b855ad1ccdfe2c9d)
+        ;
+
+        
+    
+    
+            marker_1d2d5054c67ad39ccdfaba30358df30d.bindTooltip(
+                `<div>
+                     Am Jagdberg 11 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ef5464c5451a7d44a5d50167850a6ea4 = L.marker(
+                [50.8910101, 11.581346740736322],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_e8c9435c528653855ae286eeb322e95f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ef5464c5451a7d44a5d50167850a6ea4.setIcon(icon_e8c9435c528653855ae286eeb322e95f);
+        
+    
+        var popup_05c6fdc4d5db4cef18977e7ee4713ece = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5830cad336d311cdaf01c5af8165d933 = $(`<div id="html_5830cad336d311cdaf01c5af8165d933" style="width: 100.0%; height: 100.0%;">Frongasse 5 Jena</div>`)[0];
+                popup_05c6fdc4d5db4cef18977e7ee4713ece.setContent(html_5830cad336d311cdaf01c5af8165d933);
+            
+        
+
+        marker_ef5464c5451a7d44a5d50167850a6ea4.bindPopup(popup_05c6fdc4d5db4cef18977e7ee4713ece)
+        ;
+
+        
+    
+    
+            marker_ef5464c5451a7d44a5d50167850a6ea4.bindTooltip(
+                `<div>
+                     Frongasse 5 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5a60c890b9c8678364bda6cfdf6e1dd0 = L.marker(
+                [50.8938906, 11.584550489672544],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_f3d819c6d74296956389eeaea50b4398 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5a60c890b9c8678364bda6cfdf6e1dd0.setIcon(icon_f3d819c6d74296956389eeaea50b4398);
+        
+    
+        var popup_8dfadbd0fadd4106914bfb518b6b1130 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_155c7f4eddde17123bbbcd15a4a3ad08 = $(`<div id="html_155c7f4eddde17123bbbcd15a4a3ad08" style="width: 100.0%; height: 100.0%;">Rudolstädter Straße 47 Jena</div>`)[0];
+                popup_8dfadbd0fadd4106914bfb518b6b1130.setContent(html_155c7f4eddde17123bbbcd15a4a3ad08);
+            
+        
+
+        marker_5a60c890b9c8678364bda6cfdf6e1dd0.bindPopup(popup_8dfadbd0fadd4106914bfb518b6b1130)
+        ;
+
+        
+    
+    
+            marker_5a60c890b9c8678364bda6cfdf6e1dd0.bindTooltip(
+                `<div>
+                     Rudolstädter Straße 47 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0cd2da6fa7cb2ce8a1180b9d0493b383 = L.marker(
+                [50.8965396, 11.59333145],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_4f9e3ca9df386d765771444b88bb0fc0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0cd2da6fa7cb2ce8a1180b9d0493b383.setIcon(icon_4f9e3ca9df386d765771444b88bb0fc0);
+        
+    
+        var popup_9e82f15f3558478f811dca547bc8c6ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db5b2f654bd3f29fb3284ec5c00aa16f = $(`<div id="html_db5b2f654bd3f29fb3284ec5c00aa16f" style="width: 100.0%; height: 100.0%;">Geraer Straße 54 Jena</div>`)[0];
+                popup_9e82f15f3558478f811dca547bc8c6ba.setContent(html_db5b2f654bd3f29fb3284ec5c00aa16f);
+            
+        
+
+        marker_0cd2da6fa7cb2ce8a1180b9d0493b383.bindPopup(popup_9e82f15f3558478f811dca547bc8c6ba)
+        ;
+
+        
+    
+    
+            marker_0cd2da6fa7cb2ce8a1180b9d0493b383.bindTooltip(
+                `<div>
+                     Geraer Straße 54 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a6fc24bfb60ef594de4bac877bf460a9 = L.marker(
+                [50.9001987, 11.5739512],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_fab0e94805aa3508568b7b893272603c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a6fc24bfb60ef594de4bac877bf460a9.setIcon(icon_fab0e94805aa3508568b7b893272603c);
+        
+    
+        var popup_b38f1c5e6596be7ef957cb9e0ae4d2d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_637ae152eeb9c63b4e29c2d4afe322dd = $(`<div id="html_637ae152eeb9c63b4e29c2d4afe322dd" style="width: 100.0%; height: 100.0%;">Anna-Siemsen-Straße 60 Jena</div>`)[0];
+                popup_b38f1c5e6596be7ef957cb9e0ae4d2d0.setContent(html_637ae152eeb9c63b4e29c2d4afe322dd);
+            
+        
+
+        marker_a6fc24bfb60ef594de4bac877bf460a9.bindPopup(popup_b38f1c5e6596be7ef957cb9e0ae4d2d0)
+        ;
+
+        
+    
+    
+            marker_a6fc24bfb60ef594de4bac877bf460a9.bindTooltip(
+                `<div>
+                     Anna-Siemsen-Straße 60 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bb17f32ce212ef251b401c002d35ccee = L.marker(
+                [50.903841, 11.580735],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_d94ee77ba33d87a276731513b929bf96 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bb17f32ce212ef251b401c002d35ccee.setIcon(icon_d94ee77ba33d87a276731513b929bf96);
+        
+    
+        var popup_0dc42a7206a450cd3650746d19ce80b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42b4a3d31307b2e38e7772295eee42e6 = $(`<div id="html_42b4a3d31307b2e38e7772295eee42e6" style="width: 100.0%; height: 100.0%;">Distelweg 14 Jena</div>`)[0];
+                popup_0dc42a7206a450cd3650746d19ce80b6.setContent(html_42b4a3d31307b2e38e7772295eee42e6);
+            
+        
+
+        marker_bb17f32ce212ef251b401c002d35ccee.bindPopup(popup_0dc42a7206a450cd3650746d19ce80b6)
+        ;
+
+        
+    
+    
+            marker_bb17f32ce212ef251b401c002d35ccee.bindTooltip(
+                `<div>
+                     Distelweg 14 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f96666040988ab1b6ffb2fda86b2d831 = L.marker(
+                [50.9059719, 11.5765779],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_97ed240be19f7048287a9a3133bb34de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f96666040988ab1b6ffb2fda86b2d831.setIcon(icon_97ed240be19f7048287a9a3133bb34de);
+        
+    
+        var popup_3c53f4593d7340f57a69d82f16a01fcb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_723ba7293f3596656aeeb20027d58b02 = $(`<div id="html_723ba7293f3596656aeeb20027d58b02" style="width: 100.0%; height: 100.0%;">Lilienweg 1 Jena</div>`)[0];
+                popup_3c53f4593d7340f57a69d82f16a01fcb.setContent(html_723ba7293f3596656aeeb20027d58b02);
+            
+        
+
+        marker_f96666040988ab1b6ffb2fda86b2d831.bindPopup(popup_3c53f4593d7340f57a69d82f16a01fcb)
+        ;
+
+        
+    
+    
+            marker_f96666040988ab1b6ffb2fda86b2d831.bindTooltip(
+                `<div>
+                     Lilienweg 1 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9a145dc54120d44677ec18ce60e2a5a7 = L.marker(
+                [50.9157814, 11.573785],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_4c243f24418f1a6818359a44dc39b0a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9a145dc54120d44677ec18ce60e2a5a7.setIcon(icon_4c243f24418f1a6818359a44dc39b0a1);
+        
+    
+        var popup_00b1986b16a6e79df2dcd0e0a722a47d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb57ffaa43b0324c31e6ebea7a77a06d = $(`<div id="html_bb57ffaa43b0324c31e6ebea7a77a06d" style="width: 100.0%; height: 100.0%;">Mühlenstraße 33 Jena</div>`)[0];
+                popup_00b1986b16a6e79df2dcd0e0a722a47d.setContent(html_bb57ffaa43b0324c31e6ebea7a77a06d);
+            
+        
+
+        marker_9a145dc54120d44677ec18ce60e2a5a7.bindPopup(popup_00b1986b16a6e79df2dcd0e0a722a47d)
+        ;
+
+        
+    
+    
+            marker_9a145dc54120d44677ec18ce60e2a5a7.bindTooltip(
+                `<div>
+                     Mühlenstraße 33 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2f7bb323d5a8596836c77d27d70583f7 = L.marker(
+                [50.9232594, 11.575494163525232],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_3b9a20f0a76fc7538bc5ba8c92effb18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2f7bb323d5a8596836c77d27d70583f7.setIcon(icon_3b9a20f0a76fc7538bc5ba8c92effb18);
+        
+    
+        var popup_078be12c01f689dd9798b214172e4b47 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80c52a0cbb82b8337793f966f6eda293 = $(`<div id="html_80c52a0cbb82b8337793f966f6eda293" style="width: 100.0%; height: 100.0%;">Jansonstraße 10 Jena</div>`)[0];
+                popup_078be12c01f689dd9798b214172e4b47.setContent(html_80c52a0cbb82b8337793f966f6eda293);
+            
+        
+
+        marker_2f7bb323d5a8596836c77d27d70583f7.bindPopup(popup_078be12c01f689dd9798b214172e4b47)
+        ;
+
+        
+    
+    
+            marker_2f7bb323d5a8596836c77d27d70583f7.bindTooltip(
+                `<div>
+                     Jansonstraße 10 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bef0b91ed6a6225abd79b15ab3f683f9 = L.marker(
+                [50.92771415, 11.573774199999999],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_02db281bfd43619f5faf59ede3a9fb91 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bef0b91ed6a6225abd79b15ab3f683f9.setIcon(icon_02db281bfd43619f5faf59ede3a9fb91);
+        
+    
+        var popup_986e6cf9e92dc0648be5fd9e297ffdf8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8aab800265596e3786f56b942a20fe4c = $(`<div id="html_8aab800265596e3786f56b942a20fe4c" style="width: 100.0%; height: 100.0%;">Schroeterstraße 5 Jena</div>`)[0];
+                popup_986e6cf9e92dc0648be5fd9e297ffdf8.setContent(html_8aab800265596e3786f56b942a20fe4c);
+            
+        
+
+        marker_bef0b91ed6a6225abd79b15ab3f683f9.bindPopup(popup_986e6cf9e92dc0648be5fd9e297ffdf8)
+        ;
+
+        
+    
+    
+            marker_bef0b91ed6a6225abd79b15ab3f683f9.bindTooltip(
+                `<div>
+                     Schroeterstraße 5 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_495212bec7bf9620fa7205e9b61d6baf = L.marker(
+                [50.9339324, 11.571741500000002],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_04ec7faac2782ab1e65f824946557351 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_495212bec7bf9620fa7205e9b61d6baf.setIcon(icon_04ec7faac2782ab1e65f824946557351);
+        
+    
+        var popup_9e6b6ab91f6d7102fb2d74f5cf3fb1dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eff350745869998a9bb39d3bfb40b1f7 = $(`<div id="html_eff350745869998a9bb39d3bfb40b1f7" style="width: 100.0%; height: 100.0%;">Schaefferstraße 15 Jena</div>`)[0];
+                popup_9e6b6ab91f6d7102fb2d74f5cf3fb1dd.setContent(html_eff350745869998a9bb39d3bfb40b1f7);
+            
+        
+
+        marker_495212bec7bf9620fa7205e9b61d6baf.bindPopup(popup_9e6b6ab91f6d7102fb2d74f5cf3fb1dd)
+        ;
+
+        
+    
+    
+            marker_495212bec7bf9620fa7205e9b61d6baf.bindTooltip(
+                `<div>
+                     Schaefferstraße 15 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a6d28f95b022422872ae02a274a9cf3c = L.marker(
+                [50.9353006, 11.5599403],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_5c3ec2672a1d82ea72b526422a1f840e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a6d28f95b022422872ae02a274a9cf3c.setIcon(icon_5c3ec2672a1d82ea72b526422a1f840e);
+        
+    
+        var popup_ba8205098890d1897ee382a33de1d3e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_436d0a8c9a3a755228ca26db1739f49c = $(`<div id="html_436d0a8c9a3a755228ca26db1739f49c" style="width: 100.0%; height: 100.0%;">Paraschkenmühle 16 Jena</div>`)[0];
+                popup_ba8205098890d1897ee382a33de1d3e5.setContent(html_436d0a8c9a3a755228ca26db1739f49c);
+            
+        
+
+        marker_a6d28f95b022422872ae02a274a9cf3c.bindPopup(popup_ba8205098890d1897ee382a33de1d3e5)
+        ;
+
+        
+    
+    
+            marker_a6d28f95b022422872ae02a274a9cf3c.bindTooltip(
+                `<div>
+                     Paraschkenmühle 16 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_420d4dd4d31a6b8cee3a3b63877f8454 = L.marker(
+                [50.9355336, 11.576213899999999],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_7e961d576234d8d2a84255556d07c850 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_420d4dd4d31a6b8cee3a3b63877f8454.setIcon(icon_7e961d576234d8d2a84255556d07c850);
+        
+    
+        var popup_90d3a68492960cba34a98483fdce740f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20c58ee1f084f784f6b3275050ab3c58 = $(`<div id="html_20c58ee1f084f784f6b3275050ab3c58" style="width: 100.0%; height: 100.0%;">Schillbachstraße 4 Jena</div>`)[0];
+                popup_90d3a68492960cba34a98483fdce740f.setContent(html_20c58ee1f084f784f6b3275050ab3c58);
+            
+        
+
+        marker_420d4dd4d31a6b8cee3a3b63877f8454.bindPopup(popup_90d3a68492960cba34a98483fdce740f)
+        ;
+
+        
+    
+    
+            marker_420d4dd4d31a6b8cee3a3b63877f8454.bindTooltip(
+                `<div>
+                     Schillbachstraße 4 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fd859b892dab93a1a222db02ab57309a = L.marker(
+                [50.93318465, 11.588138343310565],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_a84e32d3a76017c4a0e0c572560b3814 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fd859b892dab93a1a222db02ab57309a.setIcon(icon_a84e32d3a76017c4a0e0c572560b3814);
+        
+    
+        var popup_0e30b9f5cb5cea9fe4d40310316791e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3445be3255f5670a72cfe8af86195a68 = $(`<div id="html_3445be3255f5670a72cfe8af86195a68" style="width: 100.0%; height: 100.0%;">Arvid-Harnack-Straße 24 Jena</div>`)[0];
+                popup_0e30b9f5cb5cea9fe4d40310316791e8.setContent(html_3445be3255f5670a72cfe8af86195a68);
+            
+        
+
+        marker_fd859b892dab93a1a222db02ab57309a.bindPopup(popup_0e30b9f5cb5cea9fe4d40310316791e8)
+        ;
+
+        
+    
+    
+            marker_fd859b892dab93a1a222db02ab57309a.bindTooltip(
+                `<div>
+                     Arvid-Harnack-Straße 24 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_10747db53265c6bec1c3e06835f4ca20 = L.marker(
+                [50.93828225, 11.584302569966276],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_f9499fa49b8a031d425becf3c0affe93 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_10747db53265c6bec1c3e06835f4ca20.setIcon(icon_f9499fa49b8a031d425becf3c0affe93);
+        
+    
+        var popup_0b79e949a5200dbdc0b01e9dced788c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_54f3e012433d996dca371eefb54d50f2 = $(`<div id="html_54f3e012433d996dca371eefb54d50f2" style="width: 100.0%; height: 100.0%;">Friesweg 10 Jena</div>`)[0];
+                popup_0b79e949a5200dbdc0b01e9dced788c5.setContent(html_54f3e012433d996dca371eefb54d50f2);
+            
+        
+
+        marker_10747db53265c6bec1c3e06835f4ca20.bindPopup(popup_0b79e949a5200dbdc0b01e9dced788c5)
+        ;
+
+        
+    
+    
+            marker_10747db53265c6bec1c3e06835f4ca20.bindTooltip(
+                `<div>
+                     Friesweg 10 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4f6cfd2dfe8648dc5531f52058df13f5 = L.marker(
+                [50.93608825, 11.590544252932219],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_5ec6c7275ef53edd67fe4e00606a963a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4f6cfd2dfe8648dc5531f52058df13f5.setIcon(icon_5ec6c7275ef53edd67fe4e00606a963a);
+        
+    
+        var popup_b9bedcf9ff14f0192447c05531bae3d1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74ef4482c71fbc74755fc670f08471b9 = $(`<div id="html_74ef4482c71fbc74755fc670f08471b9" style="width: 100.0%; height: 100.0%;">Nollendorfer Straße 16 Jena</div>`)[0];
+                popup_b9bedcf9ff14f0192447c05531bae3d1.setContent(html_74ef4482c71fbc74755fc670f08471b9);
+            
+        
+
+        marker_4f6cfd2dfe8648dc5531f52058df13f5.bindPopup(popup_b9bedcf9ff14f0192447c05531bae3d1)
+        ;
+
+        
+    
+    
+            marker_4f6cfd2dfe8648dc5531f52058df13f5.bindTooltip(
+                `<div>
+                     Nollendorfer Straße 16 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c319f24f5f1f1cd0dec2ac2985a3b4d7 = L.marker(
+                [50.91982875, 11.593233350872701],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_190bc998126634d981b0980021cb4259 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c319f24f5f1f1cd0dec2ac2985a3b4d7.setIcon(icon_190bc998126634d981b0980021cb4259);
+        
+    
+        var popup_b210c2557a81f0972b698f5044f6bce9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c7c7b33c085e2753ab30071584e6d15 = $(`<div id="html_8c7c7b33c085e2753ab30071584e6d15" style="width: 100.0%; height: 100.0%;">Lindenhöhe 11 Jena</div>`)[0];
+                popup_b210c2557a81f0972b698f5044f6bce9.setContent(html_8c7c7b33c085e2753ab30071584e6d15);
+            
+        
+
+        marker_c319f24f5f1f1cd0dec2ac2985a3b4d7.bindPopup(popup_b210c2557a81f0972b698f5044f6bce9)
+        ;
+
+        
+    
+    
+            marker_c319f24f5f1f1cd0dec2ac2985a3b4d7.bindTooltip(
+                `<div>
+                     Lindenhöhe 11 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a183ad93917279d298e4dbd395ff0eaf = L.marker(
+                [50.9209589, 11.596795387648221],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_eb8aae70cb7c35b9cdff97bfad702379 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a183ad93917279d298e4dbd395ff0eaf.setIcon(icon_eb8aae70cb7c35b9cdff97bfad702379);
+        
+    
+        var popup_6b4e964337288b26cce8734a863e9f2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d069072305fe446c101257c574b35aae = $(`<div id="html_d069072305fe446c101257c574b35aae" style="width: 100.0%; height: 100.0%;">Treunertstraße 6 Jena</div>`)[0];
+                popup_6b4e964337288b26cce8734a863e9f2e.setContent(html_d069072305fe446c101257c574b35aae);
+            
+        
+
+        marker_a183ad93917279d298e4dbd395ff0eaf.bindPopup(popup_6b4e964337288b26cce8734a863e9f2e)
+        ;
+
+        
+    
+    
+            marker_a183ad93917279d298e4dbd395ff0eaf.bindTooltip(
+                `<div>
+                     Treunertstraße 6 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d43562b81e62a7d1f83a3b9fa571adb7 = L.marker(
+                [50.92276085, 11.59271432282224],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_560376a43d9c45ff20d3a707c0a87a5c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d43562b81e62a7d1f83a3b9fa571adb7.setIcon(icon_560376a43d9c45ff20d3a707c0a87a5c);
+        
+    
+        var popup_dcdc8674efb7a0ccede01dbee17b12e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c79b336d2dec94d2b43305d6c5f281e3 = $(`<div id="html_c79b336d2dec94d2b43305d6c5f281e3" style="width: 100.0%; height: 100.0%;">Leo-Sachse-Straße 4 Jena</div>`)[0];
+                popup_dcdc8674efb7a0ccede01dbee17b12e7.setContent(html_c79b336d2dec94d2b43305d6c5f281e3);
+            
+        
+
+        marker_d43562b81e62a7d1f83a3b9fa571adb7.bindPopup(popup_dcdc8674efb7a0ccede01dbee17b12e7)
+        ;
+
+        
+    
+    
+            marker_d43562b81e62a7d1f83a3b9fa571adb7.bindTooltip(
+                `<div>
+                     Leo-Sachse-Straße 4 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_05e1f3692b751f28f13b51b7e177f56f = L.marker(
+                [50.920380949999995, 11.603161965459242],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_be2c60a472331afa45595724717bd2c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_05e1f3692b751f28f13b51b7e177f56f.setIcon(icon_be2c60a472331afa45595724717bd2c7);
+        
+    
+        var popup_0c03782e73df01e1d167b576a5104d80 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f784e0d19fd07a1c366a9aa7e4a6499d = $(`<div id="html_f784e0d19fd07a1c366a9aa7e4a6499d" style="width: 100.0%; height: 100.0%;">Dreßlerstraße 59 Jena</div>`)[0];
+                popup_0c03782e73df01e1d167b576a5104d80.setContent(html_f784e0d19fd07a1c366a9aa7e4a6499d);
+            
+        
+
+        marker_05e1f3692b751f28f13b51b7e177f56f.bindPopup(popup_0c03782e73df01e1d167b576a5104d80)
+        ;
+
+        
+    
+    
+            marker_05e1f3692b751f28f13b51b7e177f56f.bindTooltip(
+                `<div>
+                     Dreßlerstraße 59 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d22b424726410e3ff0f0f809811852d7 = L.marker(
+                [50.9236363, 11.6014409],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_d318c30c240aee46a7e607b838d0abac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d22b424726410e3ff0f0f809811852d7.setIcon(icon_d318c30c240aee46a7e607b838d0abac);
+        
+    
+        var popup_40669c9224151d93aa9a1d21f3ffec4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7cbd4985acb7ea1407f44f8f884bd677 = $(`<div id="html_7cbd4985acb7ea1407f44f8f884bd677" style="width: 100.0%; height: 100.0%;">Otto-Engau-Straße 18 Jena</div>`)[0];
+                popup_40669c9224151d93aa9a1d21f3ffec4d.setContent(html_7cbd4985acb7ea1407f44f8f884bd677);
+            
+        
+
+        marker_d22b424726410e3ff0f0f809811852d7.bindPopup(popup_40669c9224151d93aa9a1d21f3ffec4d)
+        ;
+
+        
+    
+    
+            marker_d22b424726410e3ff0f0f809811852d7.bindTooltip(
+                `<div>
+                     Otto-Engau-Straße 18 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b6aa06759b8a4facf965763ff6a05d43 = L.marker(
+                [50.92511845, 11.594978242718067],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_ea2585139ba443c6473c9080f5713310 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b6aa06759b8a4facf965763ff6a05d43.setIcon(icon_ea2585139ba443c6473c9080f5713310);
+        
+    
+        var popup_4a3d74d013b99e19049376bd77686374 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bfd4ee9ab9a76a59660d775e61e2062a = $(`<div id="html_bfd4ee9ab9a76a59660d775e61e2062a" style="width: 100.0%; height: 100.0%;">Maurerstraße 8 Jena</div>`)[0];
+                popup_4a3d74d013b99e19049376bd77686374.setContent(html_bfd4ee9ab9a76a59660d775e61e2062a);
+            
+        
+
+        marker_b6aa06759b8a4facf965763ff6a05d43.bindPopup(popup_4a3d74d013b99e19049376bd77686374)
+        ;
+
+        
+    
+    
+            marker_b6aa06759b8a4facf965763ff6a05d43.bindTooltip(
+                `<div>
+                     Maurerstraße 8 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a671ed3572f60d64e19be58fde389f27 = L.marker(
+                [50.9266535, 11.6025265],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_ec790aedaa52dacf9abf2dc181811115 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a671ed3572f60d64e19be58fde389f27.setIcon(icon_ec790aedaa52dacf9abf2dc181811115);
+        
+    
+        var popup_dbd7875fec53db6daa2369455c422d02 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84af479c6333c81b51684d38d1915b1d = $(`<div id="html_84af479c6333c81b51684d38d1915b1d" style="width: 100.0%; height: 100.0%;">Am Gänseberg 3 Jena</div>`)[0];
+                popup_dbd7875fec53db6daa2369455c422d02.setContent(html_84af479c6333c81b51684d38d1915b1d);
+            
+        
+
+        marker_a671ed3572f60d64e19be58fde389f27.bindPopup(popup_dbd7875fec53db6daa2369455c422d02)
+        ;
+
+        
+    
+    
+            marker_a671ed3572f60d64e19be58fde389f27.bindTooltip(
+                `<div>
+                     Am Gänseberg 3 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f0fcf3387be144758f37035250fa9d2e = L.marker(
+                [50.92884815, 11.632190511662452],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_544b68b84445177bad4254d8373e6237 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f0fcf3387be144758f37035250fa9d2e.setIcon(icon_544b68b84445177bad4254d8373e6237);
+        
+    
+        var popup_c3385c37279f51961c4cb0a5304ef4fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94be320699041e76cc3c1bc0e06e1a46 = $(`<div id="html_94be320699041e76cc3c1bc0e06e1a46" style="width: 100.0%; height: 100.0%;">Rothirschweg 12 Jena</div>`)[0];
+                popup_c3385c37279f51961c4cb0a5304ef4fa.setContent(html_94be320699041e76cc3c1bc0e06e1a46);
+            
+        
+
+        marker_f0fcf3387be144758f37035250fa9d2e.bindPopup(popup_c3385c37279f51961c4cb0a5304ef4fa)
+        ;
+
+        
+    
+    
+            marker_f0fcf3387be144758f37035250fa9d2e.bindTooltip(
+                `<div>
+                     Rothirschweg 12 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_270960c4561972f97790a43f2e5f5267 = L.marker(
+                [50.93105435, 11.631933640006702],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_e263db660827c87d9188d7b76e6b6493 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_270960c4561972f97790a43f2e5f5267.setIcon(icon_e263db660827c87d9188d7b76e6b6493);
+        
+    
+        var popup_ea1bd5d55f359f01be5b5896ced49efc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aee946dcc166269fe5b4a4bf4c60fb06 = $(`<div id="html_aee946dcc166269fe5b4a4bf4c60fb06" style="width: 100.0%; height: 100.0%;">Siebenschläferweg 19 Jena</div>`)[0];
+                popup_ea1bd5d55f359f01be5b5896ced49efc.setContent(html_aee946dcc166269fe5b4a4bf4c60fb06);
+            
+        
+
+        marker_270960c4561972f97790a43f2e5f5267.bindPopup(popup_ea1bd5d55f359f01be5b5896ced49efc)
+        ;
+
+        
+    
+    
+            marker_270960c4561972f97790a43f2e5f5267.bindTooltip(
+                `<div>
+                     Siebenschläferweg 19 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6ca51499c2bb815b8ea6cec966dca4a7 = L.marker(
+                [50.9329284, 11.620774807229136],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_7d29a54b2cbf401e78c5f674c34b3d1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6ca51499c2bb815b8ea6cec966dca4a7.setIcon(icon_7d29a54b2cbf401e78c5f674c34b3d1f);
+        
+    
+        var popup_dfa15260a47a27496fb345afab3d622b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d95c9f30202f4260a74d46e90c7e861 = $(`<div id="html_4d95c9f30202f4260a74d46e90c7e861" style="width: 100.0%; height: 100.0%;">Löbichauer Straße 43 Jena</div>`)[0];
+                popup_dfa15260a47a27496fb345afab3d622b.setContent(html_4d95c9f30202f4260a74d46e90c7e861);
+            
+        
+
+        marker_6ca51499c2bb815b8ea6cec966dca4a7.bindPopup(popup_dfa15260a47a27496fb345afab3d622b)
+        ;
+
+        
+    
+    
+            marker_6ca51499c2bb815b8ea6cec966dca4a7.bindTooltip(
+                `<div>
+                     Löbichauer Straße 43 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6ce2adcd9bf4cc4ac4d622882339ea30 = L.marker(
+                [50.93174755, 11.613017117032353],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_d511373c10299f9a30100b11d3191c1a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6ce2adcd9bf4cc4ac4d622882339ea30.setIcon(icon_d511373c10299f9a30100b11d3191c1a);
+        
+    
+        var popup_5111348dff80fe043d0815974b68aaf0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88523fef50a3a4123d55c9db1117e3e1 = $(`<div id="html_88523fef50a3a4123d55c9db1117e3e1" style="width: 100.0%; height: 100.0%;">Sperlingsweg 1 Jena</div>`)[0];
+                popup_5111348dff80fe043d0815974b68aaf0.setContent(html_88523fef50a3a4123d55c9db1117e3e1);
+            
+        
+
+        marker_6ce2adcd9bf4cc4ac4d622882339ea30.bindPopup(popup_5111348dff80fe043d0815974b68aaf0)
+        ;
+
+        
+    
+    
+            marker_6ce2adcd9bf4cc4ac4d622882339ea30.bindTooltip(
+                `<div>
+                     Sperlingsweg 1 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a132c40e4a7a7bab6a03959b4fa8aeaa = L.marker(
+                [50.93291205, 11.60847035],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_ad844860282d0811f042bed3c31ca83e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a132c40e4a7a7bab6a03959b4fa8aeaa.setIcon(icon_ad844860282d0811f042bed3c31ca83e);
+        
+    
+        var popup_5d0264b5bbb36215dfd455969af2074e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e61767e7777d615585686908a387da0 = $(`<div id="html_2e61767e7777d615585686908a387da0" style="width: 100.0%; height: 100.0%;">Brändströmstraße 21 Jena</div>`)[0];
+                popup_5d0264b5bbb36215dfd455969af2074e.setContent(html_2e61767e7777d615585686908a387da0);
+            
+        
+
+        marker_a132c40e4a7a7bab6a03959b4fa8aeaa.bindPopup(popup_5d0264b5bbb36215dfd455969af2074e)
+        ;
+
+        
+    
+    
+            marker_a132c40e4a7a7bab6a03959b4fa8aeaa.bindTooltip(
+                `<div>
+                     Brändströmstraße 21 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_08b829c0e485541d240c5718df9953e7 = L.marker(
+                [50.9340882, 11.627102502106561],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_0d1b65f38d63b43a0a37ff0c601ef678 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_08b829c0e485541d240c5718df9953e7.setIcon(icon_0d1b65f38d63b43a0a37ff0c601ef678);
+        
+    
+        var popup_6754684a7d7f3ed45bdad30c5e90f835 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8717c52bb4ac54c010955d7a69ad868a = $(`<div id="html_8717c52bb4ac54c010955d7a69ad868a" style="width: 100.0%; height: 100.0%;">Eisenberger Straße 27 Jena</div>`)[0];
+                popup_6754684a7d7f3ed45bdad30c5e90f835.setContent(html_8717c52bb4ac54c010955d7a69ad868a);
+            
+        
+
+        marker_08b829c0e485541d240c5718df9953e7.bindPopup(popup_6754684a7d7f3ed45bdad30c5e90f835)
+        ;
+
+        
+    
+    
+            marker_08b829c0e485541d240c5718df9953e7.bindTooltip(
+                `<div>
+                     Eisenberger Straße 27 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_293e3a1800b8ca7a3425387c6834bff2 = L.marker(
+                [50.9306294, 11.599486375511507],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_864f0daf4929780683505376f617b551 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_293e3a1800b8ca7a3425387c6834bff2.setIcon(icon_864f0daf4929780683505376f617b551);
+        
+    
+        var popup_e66b8fba9d3afa0f4b65bb110a623def = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_876acd8f7beab321a454352a3474da5d = $(`<div id="html_876acd8f7beab321a454352a3474da5d" style="width: 100.0%; height: 100.0%;">Breite Straße 18 Jena</div>`)[0];
+                popup_e66b8fba9d3afa0f4b65bb110a623def.setContent(html_876acd8f7beab321a454352a3474da5d);
+            
+        
+
+        marker_293e3a1800b8ca7a3425387c6834bff2.bindPopup(popup_e66b8fba9d3afa0f4b65bb110a623def)
+        ;
+
+        
+    
+    
+            marker_293e3a1800b8ca7a3425387c6834bff2.bindTooltip(
+                `<div>
+                     Breite Straße 18 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_23d920efd71d3035db7df7c1795cc69b = L.marker(
+                [50.93143625, 11.601286222203505],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_d7c42f3b3383e25180820dd6c19d024e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_23d920efd71d3035db7df7c1795cc69b.setIcon(icon_d7c42f3b3383e25180820dd6c19d024e);
+        
+    
+        var popup_fa709314099c6d6283645ab69308ca6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cceb7e614afcca54375ca1da02fac403 = $(`<div id="html_cceb7e614afcca54375ca1da02fac403" style="width: 100.0%; height: 100.0%;">Beutnitzer Straße 18 Jena</div>`)[0];
+                popup_fa709314099c6d6283645ab69308ca6a.setContent(html_cceb7e614afcca54375ca1da02fac403);
+            
+        
+
+        marker_23d920efd71d3035db7df7c1795cc69b.bindPopup(popup_fa709314099c6d6283645ab69308ca6a)
+        ;
+
+        
+    
+    
+            marker_23d920efd71d3035db7df7c1795cc69b.bindTooltip(
+                `<div>
+                     Beutnitzer Straße 18 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d18554bca7606ab7942b94336c04122f = L.marker(
+                [50.930010100000004, 11.597864004094287],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_697b4432e256bdd415945b6765ccfbac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d18554bca7606ab7942b94336c04122f.setIcon(icon_697b4432e256bdd415945b6765ccfbac);
+        
+    
+        var popup_502fc3a0163e78e3a75a5aa60741d323 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a9b42fc0522ceb4a02517745a8ad5e6 = $(`<div id="html_9a9b42fc0522ceb4a02517745a8ad5e6" style="width: 100.0%; height: 100.0%;">Geschwister-Scholl-Straße 13 Jena</div>`)[0];
+                popup_502fc3a0163e78e3a75a5aa60741d323.setContent(html_9a9b42fc0522ceb4a02517745a8ad5e6);
+            
+        
+
+        marker_d18554bca7606ab7942b94336c04122f.bindPopup(popup_502fc3a0163e78e3a75a5aa60741d323)
+        ;
+
+        
+    
+    
+            marker_d18554bca7606ab7942b94336c04122f.bindTooltip(
+                `<div>
+                     Geschwister-Scholl-Straße 13 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_244d8847b244f49c4488c25f639b9ec5 = L.marker(
+                [50.9334441, 11.59921870564235],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_11bdfb71c979db0e62be3021e783be84 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_244d8847b244f49c4488c25f639b9ec5.setIcon(icon_11bdfb71c979db0e62be3021e783be84);
+        
+    
+        var popup_98ca0b1ccaf0dea87ac1776eaf7ecd93 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fdcc23a6758598677d3c61d9d32b2226 = $(`<div id="html_fdcc23a6758598677d3c61d9d32b2226" style="width: 100.0%; height: 100.0%;">Georg-Büchner-Straße 10 Jena</div>`)[0];
+                popup_98ca0b1ccaf0dea87ac1776eaf7ecd93.setContent(html_fdcc23a6758598677d3c61d9d32b2226);
+            
+        
+
+        marker_244d8847b244f49c4488c25f639b9ec5.bindPopup(popup_98ca0b1ccaf0dea87ac1776eaf7ecd93)
+        ;
+
+        
+    
+    
+            marker_244d8847b244f49c4488c25f639b9ec5.bindTooltip(
+                `<div>
+                     Georg-Büchner-Straße 10 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_039bd1d12249ca6aa267342497db4487 = L.marker(
+                [50.93446415, 11.601325],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_22074bb6ffe236dfff957b68c2f20d68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_039bd1d12249ca6aa267342497db4487.setIcon(icon_22074bb6ffe236dfff957b68c2f20d68);
+        
+    
+        var popup_0a20e725ba62dce6b2fe1e70efcb8a75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6dc44bc90ce3be395af3ca1eb482cb1 = $(`<div id="html_c6dc44bc90ce3be395af3ca1eb482cb1" style="width: 100.0%; height: 100.0%;">Heinrich-Heine-Straße 9 Jena</div>`)[0];
+                popup_0a20e725ba62dce6b2fe1e70efcb8a75.setContent(html_c6dc44bc90ce3be395af3ca1eb482cb1);
+            
+        
+
+        marker_039bd1d12249ca6aa267342497db4487.bindPopup(popup_0a20e725ba62dce6b2fe1e70efcb8a75)
+        ;
+
+        
+    
+    
+            marker_039bd1d12249ca6aa267342497db4487.bindTooltip(
+                `<div>
+                     Heinrich-Heine-Straße 9 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ddf498b247d64da943fc3278d05a86b4 = L.marker(
+                [50.930656150000004, 11.575727527560723],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_8b065545e8ff646fa4d95a2d3b0a3919 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ddf498b247d64da943fc3278d05a86b4.setIcon(icon_8b065545e8ff646fa4d95a2d3b0a3919);
+        
+    
+        var popup_e1f1ed35522da045215eb749c1ae37a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f9ae722a9300337acd98a6c96aab128f = $(`<div id="html_f9ae722a9300337acd98a6c96aab128f" style="width: 100.0%; height: 100.0%;">Semmelweisstraße 19 Jena</div>`)[0];
+                popup_e1f1ed35522da045215eb749c1ae37a1.setContent(html_f9ae722a9300337acd98a6c96aab128f);
+            
+        
+
+        marker_ddf498b247d64da943fc3278d05a86b4.bindPopup(popup_e1f1ed35522da045215eb749c1ae37a1)
+        ;
+
+        
+    
+    
+            marker_ddf498b247d64da943fc3278d05a86b4.bindTooltip(
+                `<div>
+                     Semmelweisstraße 19 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6a72010764ec8a1e9d1de38b492770f9 = L.marker(
+                [50.933591, 11.577271627457566],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_583f232257f7f174d384f5ad792ef8c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6a72010764ec8a1e9d1de38b492770f9.setIcon(icon_583f232257f7f174d384f5ad792ef8c1);
+        
+    
+        var popup_816202a4d4d69e363eeb930f58f639c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b57cb7e7b7910e59a1c661667ba5397b = $(`<div id="html_b57cb7e7b7910e59a1c661667ba5397b" style="width: 100.0%; height: 100.0%;">Blochmannstraße 1 Jena</div>`)[0];
+                popup_816202a4d4d69e363eeb930f58f639c5.setContent(html_b57cb7e7b7910e59a1c661667ba5397b);
+            
+        
+
+        marker_6a72010764ec8a1e9d1de38b492770f9.bindPopup(popup_816202a4d4d69e363eeb930f58f639c5)
+        ;
+
+        
+    
+    
+            marker_6a72010764ec8a1e9d1de38b492770f9.bindTooltip(
+                `<div>
+                     Blochmannstraße 1 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f7b79c640fe1cc0da601bf8912f32097 = L.marker(
+                [50.929757050000006, 11.581750198487736],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_48fa317720753f5dd26e4bc7c6fc99a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f7b79c640fe1cc0da601bf8912f32097.setIcon(icon_48fa317720753f5dd26e4bc7c6fc99a6);
+        
+    
+        var popup_4ebf654c8b4b46346d8332db416d364f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_183c1d7197ee947bd57d361597d13c6e = $(`<div id="html_183c1d7197ee947bd57d361597d13c6e" style="width: 100.0%; height: 100.0%;">Bachstraße 33 Jena</div>`)[0];
+                popup_4ebf654c8b4b46346d8332db416d364f.setContent(html_183c1d7197ee947bd57d361597d13c6e);
+            
+        
+
+        marker_f7b79c640fe1cc0da601bf8912f32097.bindPopup(popup_4ebf654c8b4b46346d8332db416d364f)
+        ;
+
+        
+    
+    
+            marker_f7b79c640fe1cc0da601bf8912f32097.bindTooltip(
+                `<div>
+                     Bachstraße 33 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_97bf1fdc8ca6dad84753a7e6cd67c19e = L.marker(
+                [50.93493085, 11.584380256379731],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_f68f6bd2db57b2d7705a18d7cf0b5285 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_97bf1fdc8ca6dad84753a7e6cd67c19e.setIcon(icon_f68f6bd2db57b2d7705a18d7cf0b5285);
+        
+    
+        var popup_51576d9642b322b183d3f3e7d56de3ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39dc46e93a45484b2114f099424819dd = $(`<div id="html_39dc46e93a45484b2114f099424819dd" style="width: 100.0%; height: 100.0%;">Berghoffsweg 9 Jena</div>`)[0];
+                popup_51576d9642b322b183d3f3e7d56de3ab.setContent(html_39dc46e93a45484b2114f099424819dd);
+            
+        
+
+        marker_97bf1fdc8ca6dad84753a7e6cd67c19e.bindPopup(popup_51576d9642b322b183d3f3e7d56de3ab)
+        ;
+
+        
+    
+    
+            marker_97bf1fdc8ca6dad84753a7e6cd67c19e.bindTooltip(
+                `<div>
+                     Berghoffsweg 9 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_254821acf7120f4b26923c7f9ad4ee17 = L.marker(
+                [50.9415341, 11.5933687],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_4ab0a82b7b843b234a396847b9063207 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_254821acf7120f4b26923c7f9ad4ee17.setIcon(icon_4ab0a82b7b843b234a396847b9063207);
+        
+    
+        var popup_03430922dc836583974b377f68b5ee13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35b3ebea59b8f63ef7aae69d5c6ba4b6 = $(`<div id="html_35b3ebea59b8f63ef7aae69d5c6ba4b6" style="width: 100.0%; height: 100.0%;">Leipziger Straße 40 Jena</div>`)[0];
+                popup_03430922dc836583974b377f68b5ee13.setContent(html_35b3ebea59b8f63ef7aae69d5c6ba4b6);
+            
+        
+
+        marker_254821acf7120f4b26923c7f9ad4ee17.bindPopup(popup_03430922dc836583974b377f68b5ee13)
+        ;
+
+        
+    
+    
+            marker_254821acf7120f4b26923c7f9ad4ee17.bindTooltip(
+                `<div>
+                     Leipziger Straße 40 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_271362ac120b03eb885a6edd1184755f = L.marker(
+                [50.9437161, 11.59258640291096],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_a19c19ff468bf993bebb86f8eb342682 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_271362ac120b03eb885a6edd1184755f.setIcon(icon_a19c19ff468bf993bebb86f8eb342682);
+        
+    
+        var popup_efe706bec5fdfd69186cc1d6614a94f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4110045352d263a4c7adf763f60e0817 = $(`<div id="html_4110045352d263a4c7adf763f60e0817" style="width: 100.0%; height: 100.0%;">Pfälzer Straße 4 Jena</div>`)[0];
+                popup_efe706bec5fdfd69186cc1d6614a94f2.setContent(html_4110045352d263a4c7adf763f60e0817);
+            
+        
+
+        marker_271362ac120b03eb885a6edd1184755f.bindPopup(popup_efe706bec5fdfd69186cc1d6614a94f2)
+        ;
+
+        
+    
+    
+            marker_271362ac120b03eb885a6edd1184755f.bindTooltip(
+                `<div>
+                     Pfälzer Straße 4 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c1dc2e276618e185f24c3effe78150de = L.marker(
+                [50.9467471, 11.5970766],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_cf38f7aa6ce704d17389cb6c141e20c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c1dc2e276618e185f24c3effe78150de.setIcon(icon_cf38f7aa6ce704d17389cb6c141e20c3);
+        
+    
+        var popup_08a786c6fec60ad8ef45d407fe574452 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8fe6d048e1c396c5b690b5cd12d2710c = $(`<div id="html_8fe6d048e1c396c5b690b5cd12d2710c" style="width: 100.0%; height: 100.0%;">Freiheitsstraße 26 Jena</div>`)[0];
+                popup_08a786c6fec60ad8ef45d407fe574452.setContent(html_8fe6d048e1c396c5b690b5cd12d2710c);
+            
+        
+
+        marker_c1dc2e276618e185f24c3effe78150de.bindPopup(popup_08a786c6fec60ad8ef45d407fe574452)
+        ;
+
+        
+    
+    
+            marker_c1dc2e276618e185f24c3effe78150de.bindTooltip(
+                `<div>
+                     Freiheitsstraße 26 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6dbe51de7963a4304fa7bbbbba97af57 = L.marker(
+                [50.947226099999995, 11.6016781619545],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_40c1211e4029d31ebab907dd83e73a9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6dbe51de7963a4304fa7bbbbba97af57.setIcon(icon_40c1211e4029d31ebab907dd83e73a9b);
+        
+    
+        var popup_d6efdcb8947c87caf0b6a21f7333af43 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f8739736012fb89ea7916a63dde40ed = $(`<div id="html_1f8739736012fb89ea7916a63dde40ed" style="width: 100.0%; height: 100.0%;">Merseburger Straße 10 Jena</div>`)[0];
+                popup_d6efdcb8947c87caf0b6a21f7333af43.setContent(html_1f8739736012fb89ea7916a63dde40ed);
+            
+        
+
+        marker_6dbe51de7963a4304fa7bbbbba97af57.bindPopup(popup_d6efdcb8947c87caf0b6a21f7333af43)
+        ;
+
+        
+    
+    
+            marker_6dbe51de7963a4304fa7bbbbba97af57.bindTooltip(
+                `<div>
+                     Merseburger Straße 10 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1e19b0295cc79957a103381c912aa8d4 = L.marker(
+                [50.9489725, 11.605407],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_79fb6e9e78a248c09204456b071f9b83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1e19b0295cc79957a103381c912aa8d4.setIcon(icon_79fb6e9e78a248c09204456b071f9b83);
+        
+    
+        var popup_79ee86ce7c9549f025b229f8c878b1c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f78c1f3576a9492fb5bc2204a0b5f08 = $(`<div id="html_4f78c1f3576a9492fb5bc2204a0b5f08" style="width: 100.0%; height: 100.0%;">Kösener Straße 28 Jena</div>`)[0];
+                popup_79ee86ce7c9549f025b229f8c878b1c4.setContent(html_4f78c1f3576a9492fb5bc2204a0b5f08);
+            
+        
+
+        marker_1e19b0295cc79957a103381c912aa8d4.bindPopup(popup_79ee86ce7c9549f025b229f8c878b1c4)
+        ;
+
+        
+    
+    
+            marker_1e19b0295cc79957a103381c912aa8d4.bindTooltip(
+                `<div>
+                     Kösener Straße 28 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b47b4e5aab57927d0887f05f9ecfda7e = L.marker(
+                [50.9511563, 11.601134],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_534b96a929335773f52eaf7b675cacef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b47b4e5aab57927d0887f05f9ecfda7e.setIcon(icon_534b96a929335773f52eaf7b675cacef);
+        
+    
+        var popup_dec9be8d390ef05af8ba7e21292dcddd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4af9ac0155bf1da9e23a1728e54d03fd = $(`<div id="html_4af9ac0155bf1da9e23a1728e54d03fd" style="width: 100.0%; height: 100.0%;">Schützenhofstraße 100 Jena</div>`)[0];
+                popup_dec9be8d390ef05af8ba7e21292dcddd.setContent(html_4af9ac0155bf1da9e23a1728e54d03fd);
+            
+        
+
+        marker_b47b4e5aab57927d0887f05f9ecfda7e.bindPopup(popup_dec9be8d390ef05af8ba7e21292dcddd)
+        ;
+
+        
+    
+    
+            marker_b47b4e5aab57927d0887f05f9ecfda7e.bindTooltip(
+                `<div>
+                     Schützenhofstraße 100 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e1922e5a454ae5f10e37d3b17e2ca185 = L.marker(
+                [50.95087385, 11.608460399999998],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_fbd567826b217fc90d8ff2440fc23101 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e1922e5a454ae5f10e37d3b17e2ca185.setIcon(icon_fbd567826b217fc90d8ff2440fc23101);
+        
+    
+        var popup_c7e904ff40bff5f396a794bf183f8507 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7962cf4fee93050ccd46e078da5d8106 = $(`<div id="html_7962cf4fee93050ccd46e078da5d8106" style="width: 100.0%; height: 100.0%;">Zitzmannstraße 28 Jena</div>`)[0];
+                popup_c7e904ff40bff5f396a794bf183f8507.setContent(html_7962cf4fee93050ccd46e078da5d8106);
+            
+        
+
+        marker_e1922e5a454ae5f10e37d3b17e2ca185.bindPopup(popup_c7e904ff40bff5f396a794bf183f8507)
+        ;
+
+        
+    
+    
+            marker_e1922e5a454ae5f10e37d3b17e2ca185.bindTooltip(
+                `<div>
+                     Zitzmannstraße 28 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_85801c20f81eddd7e9b859ec0af43b7e = L.marker(
+                [50.9539948, 11.6063658],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_6b864394e5eb6dd5925c2b6ae370b8fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_85801c20f81eddd7e9b859ec0af43b7e.setIcon(icon_6b864394e5eb6dd5925c2b6ae370b8fe);
+        
+    
+        var popup_d8a37ac2daac93065ecf65fddc7a88a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e70560238b85e9bc786fb01b868c2de3 = $(`<div id="html_e70560238b85e9bc786fb01b868c2de3" style="width: 100.0%; height: 100.0%;">Ottogerd-Mühlmann-Straße 31 Jena</div>`)[0];
+                popup_d8a37ac2daac93065ecf65fddc7a88a9.setContent(html_e70560238b85e9bc786fb01b868c2de3);
+            
+        
+
+        marker_85801c20f81eddd7e9b859ec0af43b7e.bindPopup(popup_d8a37ac2daac93065ecf65fddc7a88a9)
+        ;
+
+        
+    
+    
+            marker_85801c20f81eddd7e9b859ec0af43b7e.bindTooltip(
+                `<div>
+                     Ottogerd-Mühlmann-Straße 31 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b8611540fa65aa43402767c039f370a4 = L.marker(
+                [50.95131945, 11.61548915],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_d5af7e22fb825afabf57c53bdf86773d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b8611540fa65aa43402767c039f370a4.setIcon(icon_d5af7e22fb825afabf57c53bdf86773d);
+        
+    
+        var popup_b9432b0e0a328c86a868764328fe8cda = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d187b36b190e4a96d10537a9232df10 = $(`<div id="html_2d187b36b190e4a96d10537a9232df10" style="width: 100.0%; height: 100.0%;">Mönchsgasse 6 Jena</div>`)[0];
+                popup_b9432b0e0a328c86a868764328fe8cda.setContent(html_2d187b36b190e4a96d10537a9232df10);
+            
+        
+
+        marker_b8611540fa65aa43402767c039f370a4.bindPopup(popup_b9432b0e0a328c86a868764328fe8cda)
+        ;
+
+        
+    
+    
+            marker_b8611540fa65aa43402767c039f370a4.bindTooltip(
+                `<div>
+                     Mönchsgasse 6 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_56c271b5e94ecf5e5240bcb0654b9057 = L.marker(
+                [50.95283555, 11.611939479772266],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_b6a2f96665837149a4e64046c4d7849c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_56c271b5e94ecf5e5240bcb0654b9057.setIcon(icon_b6a2f96665837149a4e64046c4d7849c);
+        
+    
+        var popup_0cbde8cea04f5d6782031af2d6eeef8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1cc3802c5e5f81896a7536f52c8a1940 = $(`<div id="html_1cc3802c5e5f81896a7536f52c8a1940" style="width: 100.0%; height: 100.0%;">Schreckenbachweg 8 Jena</div>`)[0];
+                popup_0cbde8cea04f5d6782031af2d6eeef8d.setContent(html_1cc3802c5e5f81896a7536f52c8a1940);
+            
+        
+
+        marker_56c271b5e94ecf5e5240bcb0654b9057.bindPopup(popup_0cbde8cea04f5d6782031af2d6eeef8d)
+        ;
+
+        
+    
+    
+            marker_56c271b5e94ecf5e5240bcb0654b9057.bindTooltip(
+                `<div>
+                     Schreckenbachweg 8 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8ae6b0007c3fa4cff03f7d1a5022ca7d = L.marker(
+                [50.960267, 11.6213499],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_d6a9424ccba7893294d8731114eabac1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8ae6b0007c3fa4cff03f7d1a5022ca7d.setIcon(icon_d6a9424ccba7893294d8731114eabac1);
+        
+    
+        var popup_48c46180fc4b8ec8228d05ce216cf405 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0658fccc6adafbc6818f3c5b3f24b0c = $(`<div id="html_a0658fccc6adafbc6818f3c5b3f24b0c" style="width: 100.0%; height: 100.0%;">Nietzschestraße 10 Jena</div>`)[0];
+                popup_48c46180fc4b8ec8228d05ce216cf405.setContent(html_a0658fccc6adafbc6818f3c5b3f24b0c);
+            
+        
+
+        marker_8ae6b0007c3fa4cff03f7d1a5022ca7d.bindPopup(popup_48c46180fc4b8ec8228d05ce216cf405)
+        ;
+
+        
+    
+    
+            marker_8ae6b0007c3fa4cff03f7d1a5022ca7d.bindTooltip(
+                `<div>
+                     Nietzschestraße 10 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_58b1ffc65af542013d56d0e2a4398412 = L.marker(
+                [50.96025455, 11.611972450000001],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_abf15b7bb4438853b07d90da9e6eb9fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_58b1ffc65af542013d56d0e2a4398412.setIcon(icon_abf15b7bb4438853b07d90da9e6eb9fa);
+        
+    
+        var popup_52d91600c30bf457caa0e1149073dcd8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_975addbb2309c6f14ef7b77236d74e12 = $(`<div id="html_975addbb2309c6f14ef7b77236d74e12" style="width: 100.0%; height: 100.0%;">Auf dem Schafberge 13 Jena</div>`)[0];
+                popup_52d91600c30bf457caa0e1149073dcd8.setContent(html_975addbb2309c6f14ef7b77236d74e12);
+            
+        
+
+        marker_58b1ffc65af542013d56d0e2a4398412.bindPopup(popup_52d91600c30bf457caa0e1149073dcd8)
+        ;
+
+        
+    
+    
+            marker_58b1ffc65af542013d56d0e2a4398412.bindTooltip(
+                `<div>
+                     Auf dem Schafberge 13 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bc4fc0579c9b2a7692111a3af60c9f09 = L.marker(
+                [50.9604361, 11.6174645],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_f7cee0a690b8307914f5e40409cf2915 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bc4fc0579c9b2a7692111a3af60c9f09.setIcon(icon_f7cee0a690b8307914f5e40409cf2915);
+        
+    
+        var popup_1f864a86560daecc2507d6c6469bd182 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9df66ac65727570db2a5a53cfe24340 = $(`<div id="html_b9df66ac65727570db2a5a53cfe24340" style="width: 100.0%; height: 100.0%;">Kreuzgasse 22 Jena</div>`)[0];
+                popup_1f864a86560daecc2507d6c6469bd182.setContent(html_b9df66ac65727570db2a5a53cfe24340);
+            
+        
+
+        marker_bc4fc0579c9b2a7692111a3af60c9f09.bindPopup(popup_1f864a86560daecc2507d6c6469bd182)
+        ;
+
+        
+    
+    
+            marker_bc4fc0579c9b2a7692111a3af60c9f09.bindTooltip(
+                `<div>
+                     Kreuzgasse 22 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_315084a800ed1ff55c0c24fb432e757a = L.marker(
+                [50.9629398, 11.621057091773704],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_6cd5fe21cb42c84137cdad0f5ee068d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_315084a800ed1ff55c0c24fb432e757a.setIcon(icon_6cd5fe21cb42c84137cdad0f5ee068d8);
+        
+    
+        var popup_197c45e1c6ab393794f310f10270282f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8a08f4de64290e1b4ee1313340866b98 = $(`<div id="html_8a08f4de64290e1b4ee1313340866b98" style="width: 100.0%; height: 100.0%;">Telemannweg 8 Jena</div>`)[0];
+                popup_197c45e1c6ab393794f310f10270282f.setContent(html_8a08f4de64290e1b4ee1313340866b98);
+            
+        
+
+        marker_315084a800ed1ff55c0c24fb432e757a.bindPopup(popup_197c45e1c6ab393794f310f10270282f)
+        ;
+
+        
+    
+    
+            marker_315084a800ed1ff55c0c24fb432e757a.bindTooltip(
+                `<div>
+                     Telemannweg 8 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c74d4d23443f34b4873dbfc36d252d3b = L.marker(
+                [50.96606285, 11.62407765],
+                {
+}
+            ).addTo(map_1069a039418029dd5bafe00f6346408d);
+        
+    
+            var icon_bdb43acfbacb3e62665863eb65d09faf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c74d4d23443f34b4873dbfc36d252d3b.setIcon(icon_bdb43acfbacb3e62665863eb65d09faf);
+        
+    
+        var popup_be0112ea892f86aca5bf534d79e9214b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2091153f96c05c63d950f85b309381ec = $(`<div id="html_2091153f96c05c63d950f85b309381ec" style="width: 100.0%; height: 100.0%;">Lortzingweg 5 Jena</div>`)[0];
+                popup_be0112ea892f86aca5bf534d79e9214b.setContent(html_2091153f96c05c63d950f85b309381ec);
+            
+        
+
+        marker_c74d4d23443f34b4873dbfc36d252d3b.bindPopup(popup_be0112ea892f86aca5bf534d79e9214b)
+        ;
+
+        
+    
+    
+            marker_c74d4d23443f34b4873dbfc36d252d3b.bindTooltip(
+                `<div>
+                     Lortzingweg 5 Jena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

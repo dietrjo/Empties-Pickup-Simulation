@@ -25,6 +25,7 @@ def main():
     for i in range(len(routes_lat_lons)):
         create_map(warehouse_location, customer_locations, routes_lat_lons[i]).save(f'tour_map{i+1}.html')
         webbrowser.open(f'tour_map{i+1}.html')
+    webbrowser.open('tour_map0.html')
     print (u'\u2713')
 
 

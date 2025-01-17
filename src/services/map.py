@@ -1,9 +1,10 @@
+import webbrowser
 import folium
 
 
 def create_map(warehouse_location, customer_locations, route_lat_lons):
 
-    tour_map = folium.Map(location=warehouse_location.coords, zoom_start=14, tiles='OpenStreetMap')
+    tour_map = folium.Map(location=(50.924205555556, 11.586361111111), zoom_start=13, tiles='OpenStreetMap')
 
     # Create warehouse icon:
     folium.Marker(
@@ -23,6 +24,8 @@ def create_map(warehouse_location, customer_locations, route_lat_lons):
             tooltip=location.address,
             draggable=False
         ).add_to(tour_map)
+
+    tour_map.save('tour_map0.html')
 
     # Create Tour
     for route_coords in route_lat_lons:
