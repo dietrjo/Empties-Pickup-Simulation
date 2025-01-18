@@ -7,7 +7,7 @@ data = load_json('data.json')
 
 
 def simulate_strategy_1(n: int, tours: list[list[int]]):
-    demands = data["customers"]["demands"]
+    drink_demands = data["customers"]["drink_demands"]
 
     sum_fulfillment_level = 0
 
@@ -26,14 +26,14 @@ def simulate_strategy_1(n: int, tours: list[list[int]]):
                 continue
 
             for j in range(1, len(tour) - 1):
-                demand = demands[tour[j]]
+                drink_demand = drink_demands[tour[j]]
                 pickup_demand = get_normal_distribution_quantity()
 
                 pickup_demands += pickup_demand
                 pickup_num += 1
 
-                if pickup_demand > demand:
-                    pickup_quantity += demand
+                if pickup_demand > drink_demand:
+                    pickup_quantity += drink_demand
                 else:
                     pickup_quantity += pickup_demand
                     full_pickup_num += 1

@@ -20,7 +20,7 @@ def print_solution(manager, routing, solution, dist_matrix):
         route_load = 0
         while not routing.IsEnd(index):
             node_index = manager.IndexToNode(index)
-            route_load += data["customers"]["demands"][node_index]
+            route_load += data["customers"]["drink_demands"][node_index] + data["customers"]["other_demands"][node_index]
             plan_output += f" {node_index} Load({route_load}) -> "
             previous_index = index
             index = solution.Value(routing.NextVar(index))
@@ -63,7 +63,7 @@ def solve_cvrp(dist_matrix):
         """Returns the demand of the node."""
         # Convert from routing variable Index to demands NodeIndex.
         from_node = manager.IndexToNode(from_index)
-        return data["customers"]["demands"][from_node]
+        return data["customers"]["drink_demands"][from_node] + data["customers"]["other_demands"][from_node]
 
     demand_callback_index = routing.RegisterUnaryTransitCallback(demand_callback)
     routing.AddDimensionWithVehicleCapacity(
