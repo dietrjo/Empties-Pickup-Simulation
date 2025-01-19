@@ -1,6 +1,9 @@
 # Strategy 2: Pickup as many liters of empties at each address as will fit in the delivery vehicle.
 import math
 
+import numpy as np
+from scipy.ndimage import standard_deviation
+
 from src.services.csv import create_csv_from_dict
 from src.services.random_quantity import get_normal_distribution_quantity
 from src.utils.data_loader import load_json
@@ -13,7 +16,7 @@ def simulate_strategy_2(n: int, tours: list[list[int]]):
     drink_demands = data["customers"]["drink_demands"]
     other_demands = data["customers"]["other_demands"]
 
-    sum_fulfillment_level = 0
+    fulfillment_level_list = []
 
     full_pickup_num = 0
     pickup_num = 0
@@ -59,13 +62,16 @@ def simulate_strategy_2(n: int, tours: list[list[int]]):
                     vehicle_space = 0
 
         fulfillment_level = pickup_quantity / pickup_demands
-        sum_fulfillment_level += fulfillment_level
+        fulfillment_level_list += [fulfillment_level]
 
         rounded_level = math.ceil(fulfillment_level * 200) / 2
         fulfillment_level_graph_values[rounded_level] += 1
 
-    average_fulfillment_level = sum_fulfillment_level / n
+    average_fulfillment_level = sum(fulfillment_level_list) / n
     print(f'Erfüllungsgrad von Strategie 2: {round(average_fulfillment_level * 100, 2)}%')
+
+    standard_deviation_fulfillment_level = standard_deviation(np.array(fulfillment_level_list))
+    print(f'Standardabweichung von Strategie 2: {round(standard_deviation_fulfillment_level, 4):.4f}')
 
     full_pickup_quote = full_pickup_num / pickup_num
     print(f'100% Abholquote von Strategie 2: {round(full_pickup_quote * 100, 2)}%')
