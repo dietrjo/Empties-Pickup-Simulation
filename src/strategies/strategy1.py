@@ -1,5 +1,7 @@
 # Strategy 1: Pickup as many liters of empties at each address as will be delivered to the customer with the order.
+import math
 
+from src.services.csv import create_csv_from_dict
 from src.services.random_quantity import get_normal_distribution_quantity
 from src.utils.data_loader import load_json
 
@@ -13,6 +15,8 @@ def simulate_strategy_1(n: int, tours: list[list[int]]):
 
     full_pickup_num = 0
     pickup_num = 0
+
+    fulfillment_level_graph_values = {key / 2: 0 for key in range(201)}
 
     for _ in range(n):
         pickup_demands = 0
@@ -41,8 +45,13 @@ def simulate_strategy_1(n: int, tours: list[list[int]]):
         fulfillment_level = pickup_quantity / pickup_demands
         sum_fulfillment_level += fulfillment_level
 
+        rounded_level = math.ceil(fulfillment_level * 200) / 2
+        fulfillment_level_graph_values[rounded_level] += 1
+
     average_fulfillment_level = sum_fulfillment_level / n
     print(f'Erfüllungsgrad von Strategie 1: {round(average_fulfillment_level * 100, 2)}%')
 
     full_pickup_quote = full_pickup_num / pickup_num
     print(f'100% Abholquote von Strategie 1: {round(full_pickup_quote * 100, 2)}%')
+
+    create_csv_from_dict(fulfillment_level_graph_values, "strategy1_fulfilment_distribution.csv")
