@@ -61,7 +61,9 @@ def simulate_strategy_2(n: int, tours: list[list[int]]):
                     pickup_quantity += vehicle_space
                     vehicle_space = 0
 
-        fulfillment_level = pickup_quantity / pickup_demands
+        fulfillment_level = 1
+        if pickup_demands != 0:
+            fulfillment_level = pickup_quantity / pickup_demands
         fulfillment_level_list += [fulfillment_level]
 
         rounded_level = math.ceil(fulfillment_level * 200) / 2
