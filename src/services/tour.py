@@ -14,8 +14,13 @@ def get_tours(warehouse_location, customer_locations) -> (list[list[int]], list[
     dist_matrix_np = create_distance_matrix(addresses=addresses, coords=coords, verbose=False, format='NumpyArray')
     # dist_matrix_df = create_distance_matrix(addresses=addresses, coords=coords, verbose=False, format='DataFrame')
 
+    dist_matrix = dist_matrix_np.tolist()
+    for i in range(len(dist_matrix)):
+        for j in range(len(dist_matrix)):
+            dist_matrix[i][j] = int(dist_matrix[i][j])
+
     # tours -> array with arrays with the indexes of the locations
-    tours = solve_cvrp(dist_matrix_np)
+    tours = solve_cvrp(dist_matrix)
 
     return tours, coords
 
