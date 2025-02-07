@@ -38,8 +38,8 @@ def simulate_strategy_2(n: int, tours: list[list[int]]):
 
             tour_demand = 0
             for j in range(1, len(tour) - 1):
-                tour_demand += drink_demands[j]
-                tour_demand += other_demands[j]
+                tour_demand += drink_demands[tour[j]]
+                tour_demand += other_demands[tour[j]]
 
             vehicle_space = vehicle_capacity - tour_demand
 

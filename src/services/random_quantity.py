@@ -1,6 +1,6 @@
 import numpy as np
 
-def get_normal_distribution_quantity(expectation_value=16000, standard_deviation=10000, minimum=0, maximum=100000) -> int:
+def get_normal_distribution_quantity(expectation_value=14541, standard_deviation=10000, minimum=0, maximum=100000) -> int:
     """
     Gibt einen Zufallswert x zurück, basierend auf einer abgeschnittenen Normalverteilung,
     die nur Werte x >= minimum und x <= maximum berücksichtigt
@@ -20,7 +20,6 @@ def get_normal_distribution_quantity(expectation_value=16000, standard_deviation
         
         if value <= maximum:
             return max(minimum, round(value))
-
 
 def test():
     sum = 0
